@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+    <style>
+        .background {
+            background-color: #908d8d;
+            color: white;
+        }
+        .login-wrap {
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .login-wrap label {
+            margin: 10px;
+            display: inline-block;
+            width: 60px;
+            text-align: right;
+        }
+        #loginForm {
+            text-align: center;
+        }
+        
+    </style>
+    <div class="login-wrap">
+        <form id="loginForm">
+            <label for="username">用户名:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">密码:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit" class="login-btn"> 登录 </button>
+        </form>
+    </div>
+    
+    <script type="module">
+        import { request } from './js/utils.js';
+
+        function login(formData) {
+            fetch(`/api/login`, {
+                method: 'post',
+                body: JSON.stringify(formData),
+                headers: {
+                    'content-type': 'application/json'
+                }
+            }).then(res=>{
+                return res.json()
+            }).then(res=>{
+                if(res.success) {
+                    localStorage.setItem('accessToken', res.data.accessToken);
+                    location.href = '/static/index.html'
+                }
+            })
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // 阻止表单默认提交行为
+
+        var userName = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        login({
+            userName,
+            password
+        })
+
+});
+
+    </script>
+</body>
+</html>
+

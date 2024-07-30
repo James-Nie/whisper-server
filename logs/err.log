@@ -1,0 +1,1102 @@
+[2023-09-20 16:43:23.455 ERROR][nest] Property "messsage_id" was not found in "Message". Make sure your query is correct. EntityPropertyNotFoundError: Property "messsage_id" was not found in "Message". Make sure your query is correct.
+    at SelectQueryBuilder.buildWhere (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/query-builder/SelectQueryBuilder.ts:4236:27)
+    at SelectQueryBuilder.applyFindOptions (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/query-builder/SelectQueryBuilder.ts:3131:40)
+    at SelectQueryBuilder.setFindOptions (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/query-builder/SelectQueryBuilder.ts:105:14)
+    at EntityManager.find (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/entity-manager/EntityManager.ts:1082:14)
+    at Repository.find (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/repository/Repository.ts:524:29)
+    at MessageService.findMessageByOption (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/typeorm/models/services/message.service.ts:26:45)
+    at ChatingMessageService.getMessagesByOption (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/chating_message/chating_message.service.ts:349:42)
+    at ChatingMessageService.getHistoryMessages (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/chating_message/chating_message.service.ts:48:44)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at ChatingMessageController.getHistoryMessages (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/chating_message/chating_message.controller.ts:42:16) ExceptionsHandler
+[2023-09-20 16:50:18.759 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-20 16:50:18.814 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-20 17:28:15.127 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 10:35:11.277 ERROR][nest] Provided "skip" value is not a number. Please provide a numeric value. TypeORMError: Provided "skip" value is not a number. Please provide a numeric value.
+    at SelectQueryBuilder.skip (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/query-builder/SelectQueryBuilder.ts:1510:19)
+    at SelectQueryBuilder.applyFindOptions (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/query-builder/SelectQueryBuilder.ts:3207:22)
+    at SelectQueryBuilder.setFindOptions (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/query-builder/SelectQueryBuilder.ts:105:14)
+    at EntityManager.find (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/entity-manager/EntityManager.ts:1082:14)
+    at Repository.find (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/repository/Repository.ts:524:29)
+    at MessageService.findMessageByOption (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/typeorm/models/services/message.service.ts:26:45)
+    at ChatingMessageService.getMessagesByOption (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/chating_message/chating_message.service.ts:351:42)
+    at ChatingMessageService.getHistoryMessages (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/chating_message/chating_message.service.ts:53:44)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at ChatingMessageController.getHistoryMessages (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/chating_message/chating_message.controller.ts:42:20) ExceptionsHandler
+[2023-09-21 11:06:36.357 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:06:36.393 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:06:56.670 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:06:56.741 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:08:40.630 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:08:40.701 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:09:59.384 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:09:59.488 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:27:02.760 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:27:02.820 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:34:10.443 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:34:10.489 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:47:26.976 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:47:27.451 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 11:47:31.650 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:14:55.644 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:14:55.686 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:26:00.204 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:26:00.781 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:30:00.605 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:30:00.623 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:31:14.906 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:34:43.374 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:34:43.625 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:56:39.802 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:56:39.824 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:58:04.446 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 14:58:04.479 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 15:55:06.651 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 15:55:06.674 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 17:51:14.902 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 18:10:48.100 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-21 18:10:48.114 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:37:21.634 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:37:21.973 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:37:27.030 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:40:00.675 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:40:00.713 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:40:05.286 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:40:08.638 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:40:08.652 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:40:16.022 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:40:17.675 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:44:46.727 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:44:46.838 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:45:01.696 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:45:09.376 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:46:43.001 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:48:13.536 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:48:24.877 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:48:51.297 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:48:51.325 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:48:53.747 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:48:56.416 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:52:20.449 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:52:20.488 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:54:05.863 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:54:05.868 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:54:33.394 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:54:40.884 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:54:40.916 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:54:42.470 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:54:43.568 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:55:59.356 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:55:59.365 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:56:00.930 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:56:01.909 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:56:45.106 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:56:45.206 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:05.095 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:05.104 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:18.062 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:18.761 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:25.170 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:25.180 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:26.390 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:27.414 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:58:44.820 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:59:34.245 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:59:34.255 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 09:59:37.461 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 10:00:03.500 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-09-22 10:00:03.545 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-08 14:53:34.716 ERROR][console] (node:32867) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2023-10-08 14:53:34.717 ERROR][console] (node:32867) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+[2023-10-08 14:53:34.717 ERROR][console] (node:32867) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[2023-10-08 14:53:42.223 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-08 14:53:57.557 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-08 15:02:49.087 ERROR][console] (node:32867) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+[2023-10-08 15:02:49.087 ERROR][console] (node:32867) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 18)
+[2023-10-25 10:41:24.417 ERROR][console] (node:28692) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2023-10-25 10:41:24.418 ERROR][console] (node:28692) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+[2023-10-25 10:41:24.418 ERROR][console] (node:28692) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[2023-10-25 17:11:12.558 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:11:16.407 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:14:36.802 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:14:37.731 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:15:19.742 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:15:19.823 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:22:16.383 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:22:16.420 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:25:24.072 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:25:25.498 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:27:40.666 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:27:48.217 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:41:41.613 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:41:41.619 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-25 17:41:41.671 ERROR][nest] You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable. TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.
+    at Object.createInvalidObservableTypeError (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/util/throwUnobservableError.ts:7:10)
+    at Object.innerFrom (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:41:9)
+    at doInnerSub (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:5)
+    at outerNext (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/niejianbo/Desktop/个人文件/project/chat-app/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) ExceptionsHandler
+[2023-10-26 10:42:20.015 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2023-10-26 10:42:20.015 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+[2023-10-26 10:42:20.015 ERROR][console] (node:33793) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[2023-10-26 10:42:53.320 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+[2023-10-26 10:42:53.320 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+[2023-10-26 12:08:02.366 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+[2023-10-26 12:08:02.373 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 3)
+[2023-10-26 13:59:11.396 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+[2023-10-26 13:59:11.397 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 4)
+[2023-10-26 14:40:16.346 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+[2023-10-26 14:40:16.350 ERROR][console] (node:33793) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 5)
+[2023-10-30 14:06:42.869 ERROR][console] (node:13622) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2023-10-30 14:06:42.870 ERROR][console] (node:13622) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+[2023-10-30 14:06:42.870 ERROR][console] (node:13622) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[2023-10-30 14:06:53.908 ERROR][console] (node:13622) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+[2023-10-30 14:06:53.908 ERROR][console] (node:13622) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+[2023-10-30 14:07:17.339 ERROR][console] (node:13622) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'user_socketId' of null
+    at WebsocketService.updateSocketMes (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.service.ts:68:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at EventsGateway.handleConnection (/Users/niejianbo/Desktop/个人文件/project/chat-app/src/websocket/websocket.gateway.ts:90:13)
+[2023-10-30 14:07:17.339 ERROR][console] (node:13622) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 3)

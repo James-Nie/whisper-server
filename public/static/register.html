@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/Mock.js/1.0.0/mock-min.js"></script>
+</head>
+<body>
+    <style>
+        .register-wrap {
+            display: flex;
+
+        }
+        .top {
+            min-height: 300px;
+            border: 1px solid;
+            width: 500px;
+        }
+    </style>
+    <div class="register-wrap">
+        <div class="top" id="users">
+
+        </div>
+        <div>
+            <button id="genUsers">生成用户信息</button>
+
+            <button id="registerUsers">注册用户信息</button>
+        </div>
+        
+    </div>
+    
+    <script type="module">
+        let mockUsers = [];
+        function genMockData() {
+            const mockData = Mock.mock({
+                'list|100': [{
+                    'userName': '@string(5, 10)',
+                    'password': '123456',
+                    'deviceId': '@string(10)',
+                    'nickName': '@cname',
+                    'gender|1': [0,1]
+                }]
+            });
+
+            return mockData;
+        }
+
+        function register(dataList, index) {
+            if(dataList[index]) {
+                fetch(`/api/register`, {
+                    method: 'post',
+                    body: JSON.stringify(dataList[index]),
+                    headers: {
+                        'content-type': 'application/json'
+                    }
+                }).then(res=>{
+                    return res.json()
+                }).then(res=>{
+                    if(res.success) {
+                        register(dataList, index+1)
+                    }
+                })
+            }
+            
+        }
+
+        document.querySelector('#genUsers').addEventListener('click', function(event) {
+            mockUsers = genMockData().list;
+            const usersDom = document.querySelector('#users');
+            
+            mockUsers.forEach(item => {
+                const i = document.createElement('div');
+                i.innerText = JSON.stringify(item, null, 2);
+
+                usersDom.appendChild(i)
+            });
+
+        });
+
+        document.querySelector('#registerUsers').addEventListener('click', function(event) {
+            register(mockUsers, 0);
+        })
+
+    </script>
+</body>
+</html>
+

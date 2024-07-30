@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消息发送</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/Mock.js/1.0.0/mock-min.js"></script>
+</head>
+<body>
+    <style>
+        .block {
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .item {
+            margin: 10px;
+        }
+        .item label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+    </style>
+    <div class="block">
+        <div class="item">
+            <label class="lable">消息来自：</label>
+            <input type="text" id="userId" placeholder="请输入用户id" />
+        </div>
+        <div class="item">
+            <label class="lable">消息发送给：</label>
+            <input type="text" id="toUserId" placeholder="请输入用户id" />
+        </div>
+        <div class="item">
+            <label class="lable">消息类型：</label>
+            <select id="contentType">
+                <option value="text">文本</option>
+                <option value="image">图片</option>
+                <option value="audio">语音</option>
+            </select>
+        </div>
+        <div class="item">
+            <label class="lable">内容：</label>
+            <textarea type="text" id="content" placeholder="请输出发送内容" ></textarea>
+        </div>
+        <button id="sendMessage">发送消息</button>
+        <button id="addFriend">加好友</button>
+        <button id="acceptFriend">认可</button>
+    </div>
+
+    <div class="fromFriend block">
+        收到消息：
+    </div>
+    
+    <script type="module">
+        import { request, login } from './js/utils.js'
+        
+        import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
+        
+        const userId = new URLSearchParams(location.search).get('userId');
+        const toUserId = new URLSearchParams(location.search).get('toUserId');
+        
+        const domUserId = document.querySelector('#userId');
+        const domToUserId = document.querySelector('#toUserId');
+
+        domUserId.value = userId;
+        domToUserId.value = toUserId;
+
+        var socket = null;
+        var contentType = 'text';
+
+        ioSocket()
+        
+        function ioSocket() {
+            socket = io(`http://localhost:3000/websocket?userId=${userId}`);
+
+            socket.on("connect", () => {
+                console.log('socket.id==', socket.id); // "G5p5..."
+            });
+
+            socket.on("messageFromFriend", (data) => {
+                console.log(data);
+                const msg = document.createElement('p');
+                msg.className = 'block'
+                msg.innerText = JSON.stringify(data, null, 4) 
+                document.querySelector('.fromFriend').appendChild(msg)
+            });
+
+            socket.on("messageException", (data) => {
+                console.log(data);
+                window.alert(data.message)
+            });
+
+            socket.on("addFriendFrom", (data) => {
+				window.alert(JSON.stringify(data, null, 4))
+			})
+
+            socket.on("addFriendResult", (data) => {
+				window.alert(JSON.stringify(data, null, 4))
+			})
+
+            socket.on("acceptFriendResult", (data) => {
+				window.alert(JSON.stringify(data, null, 4))
+			})
+
+            // 对方认可我
+			socket.on("acceptFriendFrom", (data) => {
+				window.alert(JSON.stringify(data, null, 4))
+			})
+
+            document.querySelector('#content').value = Mock.mock('@csentence(10, 20)')
+            
+        }
+
+        document.querySelector('#sendMessage').addEventListener('click', ()=>{     
+            const content = document.querySelector('#content').value;
+
+            const meesageData = {
+                "message_from_id": domUserId.value,
+                "message_to_id": domToUserId.value,
+                "message_type": 0,
+                "message_content": content,
+                "message_content_type": contentType
+            }
+                
+            socket.emit("message", JSON.stringify(meesageData) );  
+        })
+
+        document.querySelector('#contentType').addEventListener('change', (e)=>{
+            contentType = e.target.value;
+            const contentDom = document.querySelector('#content');
+            if(contentType === 'text') {
+                contentDom.value = Mock.mock('@csentence(10, 20)')
+            } else if(contentType === 'image') {
+                contentDom.value = 'https://zlbdev.oss-cn-hangzhou.aliyuncs.com/upload/images/2023-08-31/1693490140632yifhy73nwc.jpg'
+            } else if(contentType === 'audio') {
+                contentDom.value = 'https://www.runoob.com/try/demo_source/horse.mp3'
+            }
+        })
+
+
+        document.querySelector('#addFriend').addEventListener('click', ()=>{     
+            const meesageData = {
+                "userId": userId,
+                "friendUserId": toUserId,
+            }  
+            socket.emit("addFriend", JSON.stringify(meesageData) );  
+        })
+
+        document.querySelector('#acceptFriend').addEventListener('click', ()=>{     
+            const meesageData = {
+                "userId": userId,
+                "acceptUserId": toUserId,
+            }  
+            socket.emit("acceptFriend", JSON.stringify(meesageData) );  
+        })
+        
+
+    </script>
+</body>
+</html>
+

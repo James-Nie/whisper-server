@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成并发送数据</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/Mock.js/1.0.0/mock-min.js"></script>
+</head>
+<body>
+    <style>
+        .background {
+            background-color: #908d8d;
+            color: white;
+        }
+        .block {
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .btn-item {
+            padding: 10px;
+        }
+    </style>
+    
+    <div class="block">
+        <div>发送用户：</div>
+        <div id="sendUser">
+
+        </div>
+    </div>
+    
+    <div class="block">
+        <span >发送内容： </span>
+        <span id="messageContent"></span>
+    </div>
+    
+    <div class="btn-item">
+        <button id="genRandom">随机生成用户，并发送</button>
+    </div>
+    
+    <script type="module">
+        import { request, login } from './js/utils.js'
+        
+        const userId = new URLSearchParams(location.search).get('userId');
+        const toUserId = new URLSearchParams(location.search).get('toUserId');
+        
+        var socket = null;
+
+        var allUsers = [];
+        function getAllUsers() {
+            return request('/api/user/all').then(res => {
+                allUsers = res.data;
+            })
+        }
+        getAllUsers()
+
+        function getRandomUser(list) {
+            const randomIndex = Math.floor(Math.random() * list.length);
+            
+            const user = list[randomIndex];
+            const dom = document.querySelector('#sendUser');
+            dom.innerHTML = '';
+            const i = document.createElement('div');
+            i.innerText = JSON.stringify(user, null, 4);
+
+            dom.appendChild(i);
+            return user;
+        }
+
+        document.querySelector('#genRandom').addEventListener('click', ()=>{
+            const user = getRandomUser(allUsers);
+            const message = Mock.mock('@csentence(20, 30)');
+
+            document.querySelector('#messageContent').innerText = message
+            login({ 
+                userName: user.user_name,
+                password: '123456'
+            }).then((res) => {
+                
+                request('/api/topic/create', {
+                    method: 'post',
+                    headers: {
+                        accessToken: res.accessToken
+                    },
+                    body: JSON.stringify({message})
+                }).then(()=>{
+                    // alert(`向 "${user.nick_name}" 发送成功，内容: ${message}`)
+                })
+                
+            })
+            
+        })
+
+        </script>
+</body>
+</html>
+

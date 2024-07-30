@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock 数据</title>
+</head>
+<body>
+    
+    <div>
+        <button id="sendMessage">发送消息</button>
+    </div>
+
+    <div class="fromFriend">
+
+    </div>
+    
+    <script type="module">
+        import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
+      
+        const userId = new URLSearchParams(location.search).get('userId');
+        const toUserId = new URLSearchParams(location.search).get('toUserId');
+        console.log('userId', userId, toUserId)
+
+        const socketType = new URLSearchParams(location.search).get('socket') || 'socket';
+
+        const host = 'localhost:3000/socket.io/';
+
+        var ws = null;
+        var socket = null;
+
+        function handshake() {
+            fetch(`http://${host}?userId=${userId}&EIO=4&transport=polling&t=${Date.now()}`).then(res=>{
+                return res.text()
+            }).then(res=>{
+                console.log('res===', JSON.parse(res.substring(1)) )
+                const data = JSON.parse(res.substring(1))
+                const sid = data.sid;
+
+                const timestampParam = Date.now()
+                fetch(`http://${host}?userId=${userId}&EIO=4&transport=polling&t=${timestampParam}&sid=${sid}`, {
+                    method: 'post',
+                    body: '40/websocket,',
+                    headers: {
+                        // 'Content-Type': 'text/html'
+                    }
+                }).then(res=> {
+                    fetch(`http://${host}?userId=${userId}&EIO=4&transport=polling&t=${Date.now()}&sid=${sid}`).then(res=>{
+                        return res.text()
+                    }).then(res=>{
+                        // const data = JSON.parse(res.substring(1))
+                        websocketConnection(sid)
+                    })
+                })
+            })
+        }
+
+        function websocketConnection(sid) {
+            ws = new WebSocket(`ws://${host}?userId=${userId}&EIO=4&transport=websocket&sid=${sid}&t=${Date.now()}`);
+            ws.onopen = function(evt) { 
+                console.log("Connection open ...", evt.data, evt); 
+                ws.send('2probe')
+            };
+
+            ws.onmessage = function(evt) {
+                console.log( "Received Message: " + evt.data);
+                if(evt.data === '3probe') {
+                    setTimeout(()=>{
+                        ws.send('5')
+                    }, 1000)
+                } else if(evt.data === '2') {
+                    setTimeout(()=>{
+                        ws.send('3')
+                    }, 10)
+                }
+            };
+
+            ws.onclose = function(evt) {
+                console.log("Connection closed.");
+            }; 
+
+            ws.onerror = function(evt) {
+                console.log("error!!!"); 
+            }; 
+        }
+
+        if(socketType === 'io') {
+            ioSocket()
+        } else {
+            handshake()
+        }
+        
+        function ioSocket() {
+            socket = io(`http://localhost:3000/websocket?userId=${userId}`);
+
+            socket.on("connect", () => {
+                console.log('socket.id==', socket.id); // "G5p5..."
+            });
+
+            socket.on("messageFromFriend", (data) => {
+                console.log(data);
+                const msg = document.createElement('p')
+                msg.innerText = JSON.stringify(data) 
+                document.querySelector('.fromFriend').appendChild(msg)
+            });
+
+            
+        }
+
+        document.querySelector('#sendMessage').addEventListener('click', ()=>{
+                const meesageData = {
+                    "message_from_id": userId,
+                    "message_to_id": toUserId,
+                    "message_type": 0,
+                    "message_content": "在不，亲？",
+                    "message_content_type": "text"
+                }
+
+                if(socketType === 'io') {
+                    socket.emit("message", JSON.stringify(meesageData) );
+                } else {
+                    const ioSocketData = `42/websocket,["message",` + JSON.stringify(JSON.stringify(meesageData)) + `]`
+                    ws.send(ioSocketData);
+                }
+                
+            })
+
+        </script>
+</body>
+</html>
+
